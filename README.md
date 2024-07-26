@@ -14,14 +14,20 @@ Like this:
 ![image](swd_pinout.png)
 
 ### Dump flash
+Using the Pack file downloaded before:
 `python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
-## Change SN
+### Change SN
+Using the SN script downloaded before:
 `python replace_sn.py mcu_fw_mod.bin <SERIAL_NUMBER>`
 For `<SERIAL_NUMBER>` check [Serial Number Prefixes](#serial-number-prefixes)
 
 ### Write modded bin back to flash
+Using the Pack file downloaded before:
 `python -m pyocd load mcu_fw_mod.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
+
+### Restore original binary
+Simply run the above command with `mcu_fw.bin` instead of `mcu_fw_mod.bin`. Keep the original binary in a safe place!
 
 ## Serial Number Prefixes (Global)
 | Model | SN |
