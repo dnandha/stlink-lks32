@@ -21,7 +21,7 @@ Using `pyocd` and the Pack file downloaded before:
 `python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
 ### Modify bin
-Copy `mcu_fw.bin` to `mcu_fw_modded.bin` and make changes. See [Change SN](#change-sn) for an example.
+Copy `mcu_fw.bin` to `mcu_fw_mod.bin` and make changes. See [Change SN](#change-sn) for an example.
 
 ### Write bin back to flash
 Using `pyocd` and the Pack file downloaded before:
