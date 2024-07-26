@@ -15,15 +15,19 @@ Like this:
 
 ### Dump flash
 Using the Pack file downloaded before:
+
 `python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
 ### Change SN
 Using the SN script downloaded before:
+
 `python replace_sn.py mcu_fw_mod.bin <SERIAL_NUMBER>`
+
 For `<SERIAL_NUMBER>` check [Serial Number Prefixes](#serial-number-prefixes)
 
 ### Write modded bin back to flash
 Using the Pack file downloaded before:
+
 `python -m pyocd load mcu_fw_mod.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
 ### Restore original binary
