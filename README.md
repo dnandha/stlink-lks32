@@ -9,7 +9,7 @@ Install python and pyocd with pip: `pip install pyocd`
 
 ## Change scooter SN
 
-## Hookup ST-Link
+### Hookup ST-Link
 Like this:
 ![image](swd_pinout.png)
 
