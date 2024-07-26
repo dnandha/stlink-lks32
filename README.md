@@ -16,7 +16,7 @@ Like this:
 ![image](swd_pinout.png)
 
 ### Dump flash
-Using the Pack file downloaded before:
+Using `pyocd` and the Pack file downloaded before:
 
 `python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
@@ -24,7 +24,7 @@ Using the Pack file downloaded before:
 Copy `mcu_fw.bin` to `mcu_fw_modded.bin` and make changes. See [Change SN](#change-sn) for an example.
 
 ### Write bin back to flash
-Using the Pack file downloaded before:
+Using `pyocd` and the Pack file downloaded before:
 
 `python -m pyocd load mcu_fw_mod.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
