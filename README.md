@@ -1,5 +1,5 @@
-# ST-Link Brightway
-This repo describes how to dump and flash Brightway controllers with LKS3208x chips with the help of a ST-Link probe.
+# ST-Link LKS3209x
+This repo describes how to dump and flash LKS3208x chips with the help of a ST-Link probe.
 
 ## Installation
 Install python and pyocd with pip: `pip install pyocd`
