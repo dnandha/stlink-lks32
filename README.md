@@ -12,6 +12,7 @@ Install python and pyocd with pip: `pip install pyocd`
 
 ### Hookup ST-Link
 Like this:
+
 ![image](swd_pinout.png)
 
 ### Dump flash
