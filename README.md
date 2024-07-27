@@ -9,8 +9,6 @@ This repository provides instructions on how to dump and flash LKS32 microcontro
 ## Basic procedure
 
 ### Hookup ST-Link
-Like this:
-
 ![image](swd_pinout.png)
 The image is showing Brightway "3 Lite" controller.
 
