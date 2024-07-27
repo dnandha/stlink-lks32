@@ -32,9 +32,8 @@ Advise: Keep the original binary in a safe place!
 
 ## Modifications
 ### Change SN of Brightway controller
-First, dwnload the [SN script](replace_sn.py).
-
-Then, using the SN script:
+1. Download the [SN script](replace_sn.py).
+2. Using the SN script:
 
 `python replace_sn.py mcu_fw_mod.bin <SERIAL_NUMBER>`
 
