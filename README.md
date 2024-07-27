@@ -43,7 +43,7 @@ For `<SERIAL_NUMBER>` check the following table.
 
 #### Serial Number Prefixes (Global)
 | Model   | SN    |
-| ------- | ----- |
+|---------|-------|
 | 3 Lite  | 35793 |
 | 4       | 46441 |
 | 4 Lite  | 46415 |
