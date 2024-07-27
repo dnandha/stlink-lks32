@@ -1,10 +1,10 @@
 # ST-Link LKS32
-This repository provides instructions on how to dump and flash LKS32 microcontroller units (MCUs) using a standard ST-Link probe, and how to modify certain parameters. Please check the (Disclaimer)[#disclaimer] before proceeding.
+This repository provides instructions on how to dump and flash LKS32 microcontroller units (MCUs) using a standard ST-Link probe, and how to modify certain parameters. Please check the [Disclaimer](#disclaimer) before proceeding.
 
 ## Installation
-Install python and pyocd with pip: `pip install pyocd`
-
-Also, download [Pack](Linko.LKS08x.1.1.4.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS08x_v1.14.zip))
+1. Install python
+2. Install `pyocd` with pip: `pip install pyocd`
+3. Download [Pack](Linko.LKS08x.1.1.4.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS08x_v1.14.zip))
 
 ## Basic procedure
 
