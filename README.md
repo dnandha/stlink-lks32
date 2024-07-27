@@ -41,7 +41,11 @@ Advise: Keep the original binary in a safe place!
 
 For `<SERIAL_NUMBER>` check the following table.
 
-#### Serial Number Prefixes (Global)
+---
+title: "Serial Number Prefixes (Global)"
+layout: default
+---
+
 | Model   | SN    |
 |---------|-------|
 | 3 Lite  | 35793 |
