@@ -37,9 +37,9 @@ Advise: Keep the original binary in a safe place!
 1. Download the [SN script](bw_change_sn.py)
 2. Using the script:
 
-`python bw_change_sn.py mcu_fw_mod.bin <SERIAL_NUMBER>`
+`python bw_change_sn.py mcu_fw_mod.bin <SN>`
 
-For `<SERIAL_NUMBER>` check the following table.
+For `<SN>` check the following table.
 
 #### Serial Number Prefixes (Global)
 
