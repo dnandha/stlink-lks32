@@ -20,7 +20,7 @@ Using `pyocd` and the Pack file downloaded before:
 `python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
 ### Modify bin
-Copy `mcu_fw.bin` to `mcu_fw_mod.bin` and make changes. See [Change SN](#change-sn) for an example.
+Copy `mcu_fw.bin` to `mcu_fw_mod.bin` and make changes. See [Modifications](#modifications) for examples.
 
 ### Write bin back to flash
 Using `pyocd` and the Pack file downloaded before:
@@ -32,8 +32,8 @@ Simply run the above command with `mcu_fw.bin` instead of `mcu_fw_mod.bin`.
 
 Advise: Keep the original binary in a safe place!
 
-## Modifications (Brightway)
-### Change SN
+## Modifications
+### Change SN of Brightway controller
 First, dwnload the [SN script](replace_sn.py).
 
 Then, using the SN script:
