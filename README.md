@@ -1,12 +1,10 @@
-# ST-Link LKS3209x
-This repo describes how to dump and flash LKS3208x chips with the help of a ST-Link probe.
+# ST-Link LKS32
+This repository provides instructions on how to dump and flash LKS32 microcontroller units (MCUs) using a standard ST-Link probe, and how to modify certain parameters. Please check the (Disclaimer)[#disclaimer] before proceeding.
 
 ## Installation
 Install python and pyocd with pip: `pip install pyocd`
 
-### Required files
-1. Download [Pack](Linko.LKS08x.1.1.4.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS08x_v1.14.zip))
-1. Download [SN script](replace_sn.py)
+Also, download [Pack](Linko.LKS08x.1.1.4.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS08x_v1.14.zip))
 
 ## Basic procedure
 
@@ -14,6 +12,7 @@ Install python and pyocd with pip: `pip install pyocd`
 Like this:
 
 ![image](swd_pinout.png)
+The image is showing Brightway "3 Lite" controller.
 
 ### Dump flash
 Using `pyocd` and the Pack file downloaded before:
@@ -33,18 +32,27 @@ Simply run the above command with `mcu_fw.bin` instead of `mcu_fw_mod.bin`.
 
 Advise: Keep the original binary in a safe place!
 
+## Modifications (Brightway)
+### Change SN
+First, dwnload the [SN script](replace_sn.py).
 
-## Example: Change SN
-Using the SN script downloaded before:
+Then, using the SN script:
 
 `python replace_sn.py mcu_fw_mod.bin <SERIAL_NUMBER>`
 
-For `<SERIAL_NUMBER>` check [Serial Number Prefixes](#serial-number-prefixes)
+For `<SERIAL_NUMBER>` check the following table.
 
-## Serial Number Prefixes (Global)
+#### Serial Number Prefixes (Global)
 | Model | SN |
 | --- | --- |
 | 3 Lite | 35793 |
 | 4 | 46441 |
 | 4 Lite | 46415 |
 | 4 Ultra | 37829 |
+
+## Disclaimer
+The information provided on this page is intended for educational purposes only. The methods discussed are aimed at understanding the functionality and security aspects of microcontroller units (MCUs).
+
+By accessing this information, you agree that the creators and publishers of this content are not responsible for any misuse of the knowledge shared here. You acknowledge that you are solely responsible for ensuring your activities comply with all applicable laws and regulations. The creators and publishers do not condone or encourage illegal activities in any form.
+
+Always seek explicit permission from the relevant parties before attempting any form of modification or analysis of electronic systems. Use this information responsibly and ethically.
