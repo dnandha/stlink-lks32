@@ -60,7 +60,7 @@ For `<SN>` check the following table.
 | 4           | 46441 |
 | 4 Lite      | 46415 |
 | 4 Ultra     | 37829 |
-| 4 Pro (2nd) | ????? |
+| 4 Pro (2nd) | 53779 |
 
 ## Disclaimer
 The information provided on this page is intended for educational purposes only. The methods discussed are aimed at understanding the functionality and security aspects of microcontroller units (MCUs).
