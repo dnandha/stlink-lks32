@@ -4,8 +4,9 @@ This repository provides instructions on how to dump and flash LKS32 / ES32 micr
 ## Installation
 1. Install python
 2. Install `pyocd` with pip: `pip install pyocd`
-3.1. LKS32: Download [Pack](Linko.LKS08x.1.1.4.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS08x_v1.14.zip))
-3.2. ES32: Download [Pack](Eastsoft.ES32_DFP.1.0.15.pack) ([Source]())
+3. Download CMSIS Pack file
+    1. LKS32: Download [Pack](Linko.LKS08x.1.1.4.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS08x_v1.14.zip))
+    2. ES32: Download [Pack](Eastsoft.ES32_DFP.1.0.15.pack) ([Source](https://www.essemi.com/index/article/download?id=921))
 
 Note: These examples use a LKS08x package. You can apply the procedure to a different MCU series using the appropriate Pack file.
 
