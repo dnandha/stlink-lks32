@@ -23,7 +23,7 @@ Using `pyocd` and the Pack file downloaded before:
 `python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
 #### ES32
-`python -m pyocd cmd -c savemem 0x08000000 0x10000 mcu_fw.bin --pack Eastsoft.ES32_DFP.1.0.15.pack --targets --name fs026r7l`
+`python -m pyocd cmd -c savemem 0x08000000 0x20000 mcu_fw.bin --pack Eastsoft.ES32_DFP.1.0.15.pack --targets --name fs026r7l`
 
 
 ### Modify bin
