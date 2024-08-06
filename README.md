@@ -23,7 +23,7 @@ Using `pyocd` and the Pack file downloaded before:
 `python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
 #### ES32
-`python -m pyocd cmd -c savemem 0x08000000 0x20000 mcu_fw.bin --pack Eastsoft.ES32_DFP.1.0.15.pack --targets --name fs026r7l`
+`python -m pyocd cmd -c savemem 0x08000000 0x20000 mcu_fw.bin --pack Eastsoft.ES32_DFP.1.0.15.pack --target fs026r7l`
 
 
 ### Modify bin
@@ -36,7 +36,7 @@ Using `pyocd` and the Pack file downloaded before:
 `python -m pyocd load mcu_fw_mod.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
 
 #### ES32
-`python -m pyocd load mcu_fw_mod.bin --pack Eastsoft.ES32_DFP.1.0.15.pack --targets --name fs026r7l`
+`python -m pyocd load mcu_fw_mod.bin --pack Eastsoft.ES32_DFP.1.0.15.pack --target fs026r7l`
 
 #### Restore original binary
 Simply run the above command with `mcu_fw.bin` instead of `mcu_fw_mod.bin`.
