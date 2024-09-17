@@ -47,7 +47,7 @@ For `<SN>` check the following table.
 |---------|-------|
 | 3 Lite  | 35793 |
 | 4       | 46441 |
-| 4 Lite  | 46415 |
+| 4 Lite  | 46419 |
 | 4 Ultra | 37829 |
 
 ## Disclaimer
