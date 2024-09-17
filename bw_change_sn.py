@@ -1,6 +1,10 @@
 def replace_string_in_binary(file_path, new_value, offset=0xfc48):
     # Convert the new value to bytes
-    new_value_bytes = new_value.encode('utf-8')
+    new_value_bytes = bytearray()
+    separator = b'\x00\x00\x00'
+    for byte in new_value.encode('utf-8'):
+        new_value_bytes.extend([byte])  # Add the original byte
+        new_value_bytes.extend(separator)  # Add 00 00 00
 
     # Open the file in read-write binary mode
     with open(file_path, 'r+b') as file:
