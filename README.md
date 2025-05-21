@@ -4,28 +4,36 @@ This repository provides instructions on how to dump and flash LKS32 microcontro
 ## Installation
 1. Install python
 2. Install `pyocd` with pip: `pip install pyocd`
-3. Download [Pack](Linko.LKS08x.1.1.4.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS08x_v1.14.zip))
-
-Note: These examples use a LKS08x package. You can apply the procedure to a different MCU series using the appropriate Pack file.
+3. Download and extract the appropriate Pack file:
+   - For LKS32MC08x: [Pack](Linko.LKS08x.1.1.7.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS08x_v1.17.zip))
+   - For LKS32MC07x: [Pack](Linko.LKS07x.1.1.7.pack) ([Source](https://www.lksmcu.com/static/upload/file/20230113/Linko.LKS07x_v1.17.zip))
 
 ## Basic procedure
 
 ### Hookup ST-Link
 ![image](swd_pinout.png)
-The image is showing Brightway "3 Lite" controller.
+The image is showing Brightway "3 Lite" controller. TP locations can vary across controllers.
 
 ### Dump flash
-Using `pyocd` and the Pack file downloaded before:
+Using `pyocd` and the Pack file downloaded before, see examples below.
 
-`python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
+LKS32MC08x:
+`python -m pyocd cmd -c savemem 0 0x10000 mcu_fw.bin --pack Linko.LKS08x.1.1.7.pack --target lks32mc081c8t8`
+
+LKS32MC07x:
+`python -m pyocd cmd -c savemem 0 0x20000 mcu_fw.bin --pack Linko.LKS07x.1.1.7.pack --target lks32mc071cbt8`
 
 ### Modify bin
 Copy `mcu_fw.bin` to `mcu_fw_mod.bin` and make changes. See [Modifications](#modifications) for examples.
 
 ### Write bin back to flash
-Using `pyocd` and the Pack file downloaded before:
+Using `pyocd` and the Pack file downloaded before, see examples below.
 
+LKS32MC08x:
 `python -m pyocd load mcu_fw_mod.bin --pack Linko.LKS08x.1.1.4.pack --target lks32mc081c8t8`
+
+LKS32MC08x:
+`python -m pyocd load mcu_fw.bin --pack Linko.LKS07x.1.1.7.pack --target lks32mc071cbt8`
 
 #### Restore original binary
 Simply run the above command with `mcu_fw.bin` instead of `mcu_fw_mod.bin`.
@@ -49,6 +57,8 @@ For `<SN>` check the following table.
 | 4       | 46441 |
 | 4 Lite  | 46419 |
 | 4 Ultra | 37829 |
+| 5       | 60562 |
+| 5 Max   | 60559 |
 
 ## Disclaimer
 The information provided on this page is intended for educational purposes only. The methods discussed are aimed at understanding the functionality and security aspects of microcontroller units (MCUs).

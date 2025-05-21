@@ -1,4 +1,16 @@
-def replace_string_in_binary(file_path, new_value, offset=0xfc48):
+import os
+
+def replace_string_in_binary(file_path, new_value):
+    # Get file size
+    file_size = os.path.getsize(file_path)
+
+    if file_size == 0x10000:
+        offset = 0xfc48
+    elif file_size == 0x20000:
+        offset = 0x1f848
+    else:
+        raise ValueError("File size is not 0x10000 or 0x20000, aborting")
+
     # Convert the new value to bytes
     new_value_bytes = bytearray()
     separator = b'\x00\x00\x00'
